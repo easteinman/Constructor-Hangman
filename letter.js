@@ -1,16 +1,16 @@
 // Constructor function for creating Letter objects
-var Letter = function(ltr){
+var Letter = function(someLetter){
     // Defaullt current is a blank space
     this.current = "_"
     // Setting the ltr object to the inputted letter
-    this.ltr = ltr;
+    this.actualLetter = someLetter;
 	// Display set to false
     this.displayLetter = false;
     // Checks to see if letter matches a letter in the game
-	this.isLetter = function(letter){
+	this.isCorrectLetter = function(letter){
         // If it does, it sets it as the current object
-		if (this.ltr == letter){
-			this.current = this.letr; 
+		if (this.actualLetter == letter){
+			this.current = this.actualLetter; 
 			return true;
         } else {
             return false;
