@@ -50,7 +50,7 @@ var Word = function(theWord){
 
 	}
 
-    // This method compares whether or not the full word is now being displayed
+    // This method compares the current word being displayed with the actual word trying to be guessed
  	this.comparingWords = function(){
  		for(var i = 0; i < this.theWord.length; i++){
 
@@ -59,7 +59,7 @@ var Word = function(theWord){
  			}
 
          }
-         // If so, return true
+                // If so, return true
  				return true;
  	}
 
